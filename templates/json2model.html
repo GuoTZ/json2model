@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+
+{% block subviews %}
+<div class="container-fluid full-height">
+    <div class="row full-height">
+        <div class="col-md-6 full-height">
+            <div class="demo-control">
+                <a href="#" class="source-clear">清空</a>
+            </div>
+            <textarea class="source full-height"></textarea>
+        </div>
+        <section class="col-md-6 full-height">
+            <div class="demo-control"><a href="#" data-result-as="html">原文</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">选择语言 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">OC-YYModel对象</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Another action</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </div>
+            <div class="result-html full-height"></div>
+            <pre class="hljs result-src full-height"><code class="result-src-content full-height"></code></pre>
+            <pre class="hljs result-debug full-height"><code class="result-debug-content full-height"></code></pre>
+        </section>
+    </div>
+</div>
+{% endblock subviews %}
